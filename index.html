@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/50aa519b67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="header">
+    <div class="top-header row">
+        <div class="logo col-md-2">
+            <a href="#">
+                <img src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_logo_mytour_red_medium.svg"
+                     alt="">
+            </a>
+        </div>
+        <div class="top-header-right col-md-9">
+            <div class="row">
+                <div class="col-md-1">
+                    <i class="fas fa-percent"></i>
+                    Ưu đãi
+                </div>
+                <div class="col-md-2">
+                    <i class="fas fa-gift"></i>
+                    Giới thiệu nhận quà
+                </div>
+                <div class="col-md-2">
+                    <i class="far fa-handshake"></i>
+                    Hợp tác với chúng tôi
+                </div>
+                <div class="col-md-2">
+                    <i class="fas fa-shopping-bag"></i>
+                    Khách hàng doanh nghiệp
+                </div>
+                <div class="col-md-1">
+                    <i class="fas fa-clipboard-list"></i>
+                    Đơn hàng
+                </div>
+                <div class="col-md-1">
+                    <img src="image/vietnam.svg" alt="" style="height: 25px; border-radius:25% ">
+                    VNĐ
+                </div>
+                <div class="col-md-1">
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-primary"
+                            style="font-size: 14px;background-color: #FF3366; font-weight: 500;border: none">Đăng nhập
+                    </button>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-outline-dark"
+                            style="font-size: 14px;color: #FF3366;font-weight: 500; border: 1px solid #FF3366">Đăng ký
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+             <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+        </div>
+    </div>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Khách sạn</a>
+                    <a class="nav-item nav-link" href="#">Vé máy bay</a>
+                    <a class="nav-item nav-link" href="#">Biệt thự, Homestay</a>
+                    <a class="nav-item nav-link " href="#">Top thương hiệu</a>
+                    <a class="nav-item nav-link " href="#">Nhà hàng</a>
+                    <a class="nav-item nav-link" href="#">Tour & Sự kiện</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</section>
+<section class="banner">
+
+    <div class="MuiBox-root jss4">
+        <video width="100%" height="460px" type="video/mp4" autoplay="" loop="">
+            <source src="videos/video_bg_mytour%20(1).mov">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="small-banner container">
+        <div class="banner-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Khách sạn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-hotel"></i>
+                                    Vé máy bay</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    Biệt thự, Homestay</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="banner-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 destination">
+                        <p>Địa điểm</p>
+                        <div class="destination-title">
+                            <input placeholder="Thành phố, khách sạn, điểm đến">
+                        </div>
+
+                    </div>
+                    <div class="col-md-4" style="border-left: 1px solid #E2E8F0;">
+                        <div class="date-tour">
+                            <div class="date-department">
+                                <p class="department-title">
+                                    Ngày đi
+                                </p>
+                                <input type="date">
+
+                            </div>
+                            <div class="date-return">
+                                <p class="return-title">
+                                    Ngày về
+                                </p>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="body">
+    <div class="slider container">
+        <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FW8445OPAW6_%2Ftmp%2Fplaytemp2011297793977543921%2FmultipartBody4968827743543033914asTemporaryFile?generation=1692007506873235&alt=media"
+             alt="">
+        <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FQPX0PR7DUG_%2Ftmp%2Fplaytemp5337789868972991393%2FmultipartBody3446977973066063566asTemporaryFile?generation=1690872277730895&alt=media"
+             alt="">
+        <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBPKFH9GERM_%2Ftmp%2Fplaytemp6410158542450772504%2FmultipartBody3910481685497228100asTemporaryFile?generation=1691464999690047&alt=media"
+             alt="">
+        <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://googleapis.tripi.vn/download/storage/v1/b/tourcdn/o/photos%2FH0I0HB1B97_%2Ftmp%2Fplaytemp2443853417114810977%2FmultipartBody3577809183737974532asTemporaryFile?generation=1677033770819107&alt=media"
+             alt="">
+        <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://googleapis.tripi.vn/download/storage/v1/b/tourcdn/o/photos%2F3G2EMEYQZC_%2Ftmp%2Fplaytemp5649240327319449984%2FmultipartBody1266510668978749085asTemporaryFile?generation=1689043464528404&alt=media"
+             alt="">
+    </div>
+
+    <div class="plash-sale">
+        <div class="container">
+            <div class="top-plash" style="display: flex">
+                <div class="top-plash-left col-md-6">
+                    <img src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_flashSale_home_white_new.png"
+                         alt="">
+                    <div style="display: flex">
+                        <p> Chương trình sẽ kết thúc trong</p>
+                        <div class="time">
+                            <div class="item">
+                                <div class="btn" id="hour">12</div>
+                                :
+                            </div>
+                            <div class="item">
+                                <div class="btn" id="minute">30</div>
+                                :
+                            </div>
+                            <div class="item">
+                                <div class="btn" id="seconds">12</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6" style="display: flex;justify-content: end">
+                    <div class="happenning">
+                        <span>00:00-23:59</span>
+                        <span> Đang diễn ra</span>
+                    </div>
+                    <div class="happenning">
+                        <span>00:00-23:59</span>
+                        <span> Đang diễn ra</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-plash">
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-plash">
+                    <div class="img-plash">
+                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                             alt="">
+                        <div class="discount">
+                            <span>-15%</span>
+                        </div>
+                        <div class="heart-plash">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <div style="padding: 5%">
+                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                        </div>
+                        <div class="location">
+                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                            Thành phố Vũng tàu
+                        </div>
+                        <div class="ranking">
+                            <i class="fa fa-umbrella" aria-hidden="true">
+                                8.8</i>
+                            Rất tốt (1257 đánh giá)
+                        </div>
+                        <div class="just-order">
+                            Vừa được đặt 4 giờ trước
+                        </div>
+                        <div class="price-plash">
+                            <span class="old-price">2.421.335 ₫</span>
+                            <span class="news-price">2.212.606 ₫</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="see-more">
+                <a href="#"> Xem thêm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="best-flight">
+        <div class="container">
+            <div class="best-flight-top row">
+                <div class="col-md-6">
+                    <div style="display: flex;color: #1A202C; font-size: 24px;font-weight: 600">
+                        Chuyến bay tốt nhất từ
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle"
+                               style=" margin-left: 8px; margin-right: 8px;color: rgb(255, 51, 102); cursor: pointer;"
+                               data-toggle="dropdown"> Hà Nội <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="color: #4A5568;">Những chuyến bay giá tốt nhất trong tháng khởi hành từ Hà Nội</div>
+                </div>
+                <div class="col-md-6 discover">
+                    <a href="#">Khám phá ngay</a>
+                </div>
+            </div>
+            <div class="autoplay" style="display: flex;">
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+                <div class="slider-best">
+                    <div class="logo-airline">
+                        <img src="	https://storage.googleapis.com/tripi-flights/airline_logos/VU_logo.png" alt="">
+
+                        <p style="padding-top: 2%">Vietravel Airlines</p>
+                    </div>
+                    <div class="from-to">
+                        Nội Bài <i class="fa-solid fa-arrow-right"></i> Tân Sơn Nhất
+                    </div>
+                    <div class="date-fly">
+                        <i class="fa-solid fa-plane"></i>
+                        Khởi hành: 22/8/2023
+                    </div>
+                    <div class="price-best">
+                        <span style="color: #1a202c; font-size: 18px;line-height: 22px; font-weight: 600">298.000 ₫</span>
+                        <span style="color: rgb(74, 85, 104);font-size: 14px;line-height: 22px"> Giá sau thuế: 940.440 ₫</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-hotel">
+        <div class="container">
+            <div class="title-hotel">
+                <p>Khách sạn giá sốc chi có trên Mytour</p>
+                <span> Tiết kiện chi phí với các khách sạn hợp tác chiến lược cùng Mytour, cam kết giá tốt nhất và chất lượng tốt nhất dành cho bạn</span>
+            </div>
+            <div class="row">
+                <div class="worko-tabs" style="width: 100%">
+
+                    <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked/>
+                    <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two"/>
+                    <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three"/>
+                    <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four"/>
+
+                    <div class="tabs flex-tabs">
+                        <label for="tab-one" id="tab-one-label" class="tab">Phú Quốc</label>
+                        <label for="tab-two" id="tab-two-label" class="tab">Nha Trang</label>
+                        <label for="tab-three" id="tab-three-label" class="tab">Bà Rịa - Vũng Tàu</label>
+                        <label for="tab-four" id="tab-four-label" class="tab">Đà Lạt</label>
+                        <label for="tab-four" id="tab-five-label" class="tab">Đà Nẵng</label>
+                        <label for="tab-four" id="tab-six-label" class="tab">Sapa</label>
+
+
+                        <div id="tab-one-panel" class="panel active">
+                            <div class="row">
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-plash col-md-3">
+                                    <div class="img-plash">
+                                        <img src="https://img.tripi.vn/cdn-cgi/image/width=548,height=310/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FBZ1O6VKR21_%2Ftmp%2Fplaytemp8992226862162980543%2FmultipartBody8889052234719766714asTemporaryFile?generation=1595488423270831&alt=media"
+                                             alt="">
+                                        <div class="discount">
+                                            <span>-15%</span>
+                                        </div>
+                                        <div class="heart-plash">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <div class="title-plash">
+                                        <h3>Khách sạn Imperial Vũng Tàu</h3>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ecf000;"></i>
+                                        </div>
+                                        <div class="location">
+                                            <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                            Thành phố Vũng tàu
+                                        </div>
+                                        <div class="ranking">
+                                            <i class="fa fa-umbrella" aria-hidden="true">
+                                                8.8</i>
+                                            Rất tốt (1257 đánh giá)
+                                        </div>
+                                        <div class="just-order">
+                                            Vừa được đặt 4 giờ trước
+                                        </div>
+                                        <div class="price-plash">
+                                            <span class="old-price">2.421.335 ₫</span>
+                                            <span class="news-price">2.212.606 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-two-panel" class="panel ">
+                            Tab two content
+                        </div>
+                        <div id="tab-three-panel" class="panel ">
+                            Tab three content
+                        </div>
+                        <div id="tab-four-panel" class="panel ">
+                            Tab four content
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="footer"></section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
