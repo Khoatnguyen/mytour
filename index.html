@@ -101,60 +101,82 @@
         </video>
     </div>
     <div class="small-banner container">
-        <div class="banner-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-hotel"></i>
-                                    Khách sạn</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-hotel"></i>
-                                    Vé máy bay</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-house"></i>
-                                    Biệt thự, Homestay</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <div class="row">
+            <div class="col-12">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                       href="#list-home" role="tab" aria-controls="home">
+                        <i class="fa-solid fa-hotel"></i>
+                        Khách sạn</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                       href="#list-profile" role="tab" aria-controls="profile">
+                        <i class="fa-solid fa-hotel"></i>
+                        Vé máy bay</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                       href="#list-messages" role="tab" aria-controls="messages">
+                        <i class="fa-solid fa-house"></i>
+                        Biệt thự, Homestay</a>
+                </div>
             </div>
-        </div>
-        <div class="banner-bot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 destination">
-                        <p>Địa điểm</p>
-                        <div class="destination-title">
-                            <input placeholder="Thành phố, khách sạn, điểm đến">
-                        </div>
+            <div class="col-12">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                         aria-labelledby="list-home-list">
+                        <div class="row" style="height: 100%;width: 100%">
+                            <div class="col-md-11 d-flex">
+                                <div class="col-md-4 destination">
+                                    <p>Địa điểm</p>
+                                    <div class="destination-title">
+                                        <input placeholder="Thành phố, khách sạn, điểm đến">
+                                    </div>
 
-                    </div>
-                    <div class="col-md-4" style="border-left: 1px solid #E2E8F0;">
-                        <div class="date-tour">
-                            <div class="date-department">
-                                <p class="department-title">
-                                    Ngày đi
-                                </p>
-                                <input type="date">
+                                </div>
+                                <div class="col-md-5" style="border-left: 1px solid #E2E8F0;">
+                                    <div class="date-tour">
+                                        <div class="date-department">
+                                            <p class="department-title">
+                                                Ngày đi
+                                            </p>
+                                            <input type="date">
 
+                                        </div>
+                                        <div class="date-return">
+                                            <p class="return-title">
+                                                Ngày về
+                                            </p>
+                                            <input type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 room-number">
+                                    <p class="room-number-title">Số phòng, số khách</p>
+                                    <select class="form-select">
+                                        <div style="height: 50px !important;">
+                                            <option>
+                                                1 phòng, 1 người lớn
+                                            </option>
+                                        </div>
+                                        <option>Đi theo gia đình</option>
+                                        <option>Đi theo nhóm</option>
+                                        <option>Đi công tác</option>
+                                    </select>
+
+                                </div>
                             </div>
-                            <div class="date-return">
-                                <p class="return-title">
-                                    Ngày về
-                                </p>
-                                <input type="date">
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-danger" style="width: 100%; height: 100%">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4"></div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        ...
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        ...
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -974,8 +996,646 @@
         </div>
     </div>
 
+    <div class="top-brands ">
+        <div class="container">
+            <div class="header-brands">
+                <div class="row">
+                    <div class="col-md-6 left-header-brands">
+                        <img src="https://gcs.tripi.vn/tripi-assets/mytour/icons/icon_mytour_mall_red.svg" alt="">
+                        <p>Những chuyến bay giá tốt nhất trong tháng khởi hành từ Hà Nội</p>
+                    </div>
+                    <div class="col-md-6 discover">
+                        <a href="#">Khám phá ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-brands single-item ">
+                <div class="content-item">
+                    <div class="row">
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="row">
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="row">
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=1170/https://gcs.tripi.vn/hms_prod/photo/thumb/1617794135929ad/muong-thanh-phu-quoc.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Khách sạn bán chạy nhất</p>
+                                    <p>. Phong cách đa dạng, phù hợp mới mọi sở thích</p>
+                                    <p>. Đảm bảo giá tốt nhất</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 brands-item">
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617346357799Py/meliaaa.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Nghỉ dưỡng ngắn ngày chuẩn 5 sao</p>
+                                    <p>. Bao trọn bữa sáng</p>
+                                    <p>. Tiện nghi đa dạng</p>
+                                    <p>. Nghỉ dưỡng kết hợp với công tác</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="https://img.tripi.vn/cdn-cgi/image/width=840,height=590/https://gcs.tripi.vn/hms_prod/photo/thumb/1617161509388zz/an.jpg">
+                                <h2>Chỉ từ 270k/người</h2>
+                                <div class="logo-brands">
+                                    <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/hms_prod/photo/img/1617079110329Fj/silverland.png"
+                                         alt="">
+                                </div>
+                                <div class="caption">
+                                    <p>. Trái tim phố cổ Hội An</p>
+                                    <p>. Bữa sáng không gian mở</p>
+                                    <p>. Phù hợp với du lịch lưu trú</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="favorite-destination">
+        <div class="container">
+            <div class="title-favorite">
+                <p>Điểm đến yêu thích</p>
+                <span> Địa điểm hot nhất do Mytour đề xuất</span>
+            </div>
+            <div class="content-favorite">
+                <div class="a1">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/phu-quoc.png"
+                                 alt="">
+                        </a>
+                        <h2>Phú Quốc</h2>
+                    </div>
+                </div>
+                <div class="a2">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/nha-trang.png"
+                                 alt="">
+                        </a>
+                        <h2>Nha Trang</h2>
+                    </div>
+                </div>
+                <div class="a3">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/vung-tau.png"
+                                 alt=""> </a>
+                        <h2>Vũng tàu</h2>
+                    </div>
+                </div>
+                <div class="a4">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/da-lat.png"
+                                 alt=""> </a>
+                        <h2>Đà lạt</h2>
+                    </div>
+                </div>
+                <div class="a5">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/danang.png"
+                                 alt=""> </a>
+                        <h2>Đà nẵng</h2>
+                    </div>
+                </div>
+                <div class="a6">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/phan-thiet.png"
+                                 alt=""> </a>
+                        <h2>Phan thiết</h2>
+                    </div>
+                </div>
+                <div class="a7">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/ha-long.png"
+                                 alt=""> </a>
+                        <h2>Hạ long</h2>
+                    </div>
+                </div>
+                <div class="a8">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/hochiminh.png"
+                                 alt=""> </a>
+                        <h2>Hồ chí minh</h2>
+                    </div>
+                </div>
+                <div class="a9">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/sa-pa.png"
+                                 alt=""> </a>
+                        <h2>Sa-pa</h2>
+                    </div>
+                </div>
+                <div class="a10">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/hoi-an.png"
+                                 alt=""> </a>
+                        <h2>Hội an</h2>
+                    </div>
+                </div>
+                <div class="a11">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/hanoi.png"
+                                 alt=""> </a>
+                        <h2>Hà nội</h2>
+                    </div>
+                </div>
+                <div class="a12">
+                    <div style="width: 100%;height: 100%; position: relative">
+                        <a href="#">
+                            <img src="https://img.tripi.vn/cdn-cgi/image/width=640,height=640/https://gcs.tripi.vn/tripi-assets/mytour/images/locations/hai-phong.png"
+                                 alt=""> </a>
+                        <h2>Hải phòng</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 utilities">
+                    <h2>Tải ứng dụng Mytour.vn</h2>
+                    <div style="display: block">
+                        <p> Đặt vé máy bay, khách sạn hạng sang</p>
+                        <p>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Giá tốt hơn với đặt phòng trực tiếp tại khách sạn
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Nhân viên chăm sóc, tư vấn nhiều kinh nghiệm
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Hơn 5000 khách sạn tại Việt Nam với đánh giá thực
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Nhiều chương trình khuyến mãi và tích lũy điểm
+                        </p>
+                        <p>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Thanh toán dễ dàng, đa dạng
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-7" style="position: relative">
+                    <div style="width: 20rem;display: flex;position: absolute;padding-top: 20%">
+                        <span>
+                        <img src="https://gcs.tripi.vn/tripi-assets/mytour/icons/icon_QR_code.png" alt=""> </span>
+                        <div>
+                        <span>
+                            <img src="https://gcs.tripi.vn/tripi-assets/mytour/icons/icon_app_store.svg" alt="">
+                            </span>
+                            <span>
+                        <img src="https://gcs.tripi.vn/tripi-assets/mytour/icons/icon_chplay.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <img style="position: absolute;width: 100%; height: 100%"
+                         src="https://gcs.tripi.vn/public-tripi/mytour-web/big_icon_mytour.png" alt="">
+                    <img style="position: absolute;margin-top: -5rem ; right: 0"
+                         src="https://gcs.tripi.vn/public-tripi/mytour-web/app_mytour_banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="best-service">
+
+        <div class="list-group" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#home" role="tab">Các
+                khách sạn hàng đầu</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile" role="tab">Các chặng
+                bay </a>
+        </div>
+
+
+        <div class="tab-content container">
+            <div class="tab-pane active" id="home" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Thừa Thiên-Huế</li>
+                            <li>Nghệ An</li>
+                            <li>Quảng Ngãi</li>
+                            <li>Cao Bằng</li>
+                            <li>Hà Giang</li>
+                            <li>Long An</li>
+                            <li>Vĩnh Long</li>
+                            <li>Khánh Hòa</li>
+                            <li>Phú Thọ</li>
+                            <li>Thái Nguyên</li>
+                            <li>Nam Định</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Vé may bay đến Hồ Chí Minh</li>
+                            <li>Vé may bay đến Hà Nội</li>
+                            <li>Vé may bay đến Đà Nẵng</li>
+                            <li>Vé may bay đến Thành phố Vinh</li>
+                            <li>Vé may bay đến Nha Trang</li>
+                            <li>Vé may bay đến Hải Phòng</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Vé may bay đến Hồ Chí Minh</li>
+                            <li>Vé may bay đến Hà Nội</li>
+                            <li>Vé may bay đến Đà Nẵng</li>
+                            <li>Vé may bay đến Thành phố Vinh</li>
+                            <li>Vé may bay đến Nha Trang</li>
+                            <li>Vé may bay đến Hải Phòng</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Vé may bay đến Hồ Chí Minh</li>
+                            <li>Vé may bay đến Hà Nội</li>
+                            <li>Vé may bay đến Đà Nẵng</li>
+                            <li>Vé may bay đến Thành phố Vinh</li>
+                            <li>Vé may bay đến Nha Trang</li>
+                            <li>Vé may bay đến Hải Phòng</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <li>Vé may bay đến Hồ Chí Minh</li>
+                            <li>Vé may bay đến Hà Nội</li>
+                            <li>Vé may bay đến Đà Nẵng</li>
+                            <li>Vé may bay đến Thành phố Vinh</li>
+                            <li>Vé may bay đến Nha Trang</li>
+                            <li>Vé may bay đến Hải Phòng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
-<section class="footer"></section>
+<section class="footer">
+    <div class="container">
+        <div class="contact">
+            <div class="contact-form">
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="https://gcs.tripi.vn/tripi-assets/mytour/icons/icon_mail_red.svg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Bạn muốn tiết kiệm tới 50% khi đặt phòng khách sạn, vé máy bay?</h4>
+                        <p>Nhập số điện thoại để Mytour có thể gửi đến bạn những chương trình khuyến mại mới nhất</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="wrap">
+                            <div class="search">
+                                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                <button type="submit" class="searchButton">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
